@@ -10,6 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
         java: [ 11, 12, 13 ]
 
     # se ejecuta en Ubuntu Linux
