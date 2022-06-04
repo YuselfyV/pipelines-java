@@ -8,6 +8,9 @@ on:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        java: [ 11, 12, 13 ]
 
     # se ejecuta en Ubuntu Linux
     runs-on: ubuntu-latest
